@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <input type="checkbox" id="check" class="check" />
+    <div class="menu">
+      <label for="check">
+        <span class="material-symbols-outlined"> menu </span>
+      </label>
+    </div>
+    <div class="logo">
+      <img src="https://thumbs.dreamstime.com/b/portfolio-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87920676.jpg"
+        alt="logo" />
+    </div>
+
+    <ul>
+      <li><a href="#banner">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="banner">
+    <div class="bannerText">
+      <h1>HI I AM ADITYA.</h1>
+      <p>I am a web developer</p>
+      <a href="#info">Contact Me</a>
+    </div>
+    <div class="bannerImg">
+      <img src="photo.jpg" alt="image" />
+    </div>
+  </section>
+  <section class="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <img src="pubg-mobile.jpg" alt="Project 1" />
+        <h3>PUBG</h3>
+        <button>Visit-></button>
+      </div>
+      <div class="project-card">
+        <img src="Call-of-Duty-Emblem.jpg" alt="Project 2" />
+        <h3>Call Of Duty</h3>
+        <button>Visit-></button>
+      </div>
+      <div class="project-card">
+        <img src="photo.jpg" alt="Project 3" />
+        <h3>Portfolio</h3>
+        <button>Visit-></button>
+      </div>
+      <div class="project-card">
+        <img src="LogoVersion_Beta-Key-Art_VALORANT.jpg" alt="Project 4" />
+        <h3>Valorent</h3>
+        <button>Visit-></button>
+      </div>
+      <div class="project-card">
+        <img src="R.png" alt="Project 5" />
+        <h3>Twitter</h3>
+        <button>Visit-></button>
+      </div>
+      <div class="project-card">
+        <img src="instagram-icon-white-on-black.png" alt="Project 6" />
+        <h3>Instagram</h3>
+        <button>Visit-></button>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2 class="section-title">My Skills & Achievements</h2>
+    <div class="skill-cards">
+      <div class="card">
+        <img src="design.jpg" alt="design" />
+        <h3>Skill 1</h3>
+         </div>
+      <div class="card">
+        <img src="UI.jpg" alt="UI/UX" />
+        <h3>Skill 2</h3>
+          </div>
+      <div class="card">
+        <img src="web.png" alt="web development" />
+        <h3>Skill 3</h3>
+         </div>
+      <div class="card">
+        <img src="cloud.jpeg" alt="cloud computing" />
+        <h3>Skill 4</h3>
+       </div>
+      <div class="card">
+        <img src="block.jpg" alt="blockchain" />
+        <h3>Skill 5</h3>
+      </div>
+      <div class="card">
+        <img src="ai.jpg" alt="AI" />
+        <h3>Skill 6</h3>
+        </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="head">
+      <h1>ABOUT ME</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi unde obcaecati eligendi. Molestiae expedita,
+        nulla, fugit dolor at laudantium cupiditate molestias fuga iure provident id velit reiciendis modi esse minus
+        error, neque mollitia nam exercitationem. Ex officiis dolor quidem quis dolore debitis quibusdam. Sequi aliquam
+        velit nihil deleniti aut eum.</p>
+    </div>
+    <div class="info" id="info">
+      <!-- <div class="skill card">
+        <input type="checkbox" class="skills" id="skills">
+        <label for="skills"><a href="#">skills</a></label>
+        <div class="points s">
+          <div class="p">web development</div>
+          <div class="p">graphic design</div>
+          <div class="p">android development</div>
+          <div class="p">UI/UX Design</div>
+          <div class="p">SEO Marketing</div>
+        </div>
+      </div> -->
+      <div class="achievement card">
+        <input type="checkbox" class="achievements" id="achievements">
+        <label for="achievements"><a href="#">achievements</a></label>
+        <div class="points">
+          <div class="p">CGPA - 9.2</div>
+          <div class="p">Contributed in GSOC</div>
+          <div class="p">Codeforces rating - 1888</div>
+          <div class="p">Won in RUV Hackathon 2023</div>
+          <div class="p">Made an APP called PUBG</div>
+        </div>
+      </div>
+      <div class="qualification card">
+        <input type="checkbox" class="qualifications" id="qualifications">
+        <label for="qualifications"><a href="#">experiences</a></label>
+        <div class="points">
+          <div class="p">codeforces</div>
+          <div class="p">graphic design</div>
+          <div class="p">android development</div>
+          <div class="p">UI/UX Design</div>
+          <div class="p">SEO Marketing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="h">
+      <h1>Contact Me</h1>
+    </div>
+    <div class="me">
+      <div class="detail c">
+        <p>Email - kalavatiaditya@gmail.com</p>
+        <p>Phone Number - +91 7607657600</p>
+      </div>
+      <div class="input c">
+        <form id="contactForm" action="#" method="post">
+          <div><input type="text" class="name" placeholder="Your Name" id="name" required></div>
+          <div><input type="email" class="email" placeholder="Your Email" id="email" required></div>
+          <div><textarea name="message" cols="30" rows="10" placeholder="Enter your message here" id="message" required></textarea></div>
+          <div><input type="submit" value="Submit"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

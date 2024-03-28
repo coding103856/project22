@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+:root {
+  --colordark: rgb(20, 21, 20);
+  --colorlight: rgb(248, 250, 248);
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; 
+}
+#navbar .logo {
+  float: left;
+}
+nav ul li a:hover {
+  background-color: #111;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #666b45;
+}
+
+#navbar li {
+  float: right;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1px 1px;
+  text-decoration: none;
+}
+
+
+#navbar li a:hover {
+  background-color: #111;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: var(--colordark);
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+
+}
+#check{
+    display: none;
+}
+.menu {
+  display: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 60px;
+  width: 150px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(241, 239, 239);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons span {
+  cursor: pointer;
+  padding: 5px;
+}
+.banner {
+    background-color: rgb(44, 41, 41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 60px;
+  
+}
+
+.bannerText {
+  flex: 1;
+  color: var(--colorlight);
+}
+.bannerText h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 2.5em;
+}
+
+.bannerText p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 1.2em;
+}
+.bannerText a {
+    margin: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    color: red;
+    border: 2px solid ;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+  }
+  .bannerText a:hover {
+    background-color: rgb(19, 23, 19);
+    color: white;
+    border: 2px solid var(--colorlight);
+  }
+.bannerImg {
+  flex: 1;
+}
+.bannerImg img {
+  margin: 20px;
+  width: 80%;
+  border-radius: 100px;
+}
+/* CSS */
+#skills {
+  padding: 50px 0;
+}
+
+#skills h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 2.5em;
+  text-align: center;
+}
+#skills .skill-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* This will create a 3 column grid */
+  gap: 20px; /* This will add a gap between the grid items */
+}
+
+#skills .card {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#skills .card:hover {
+  color: #f00; /* Change as needed */
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* Change as needed */
+  transform: scale(1.05); /* Enlarge the card */
+}
+
+#skills .card img {
+  max-width: 100%;
+  height: auto;
+}
+
+#skills .card h3 {
+  font-size: 1.5em;
+}
+
+#skills .card p {
+  font-size: 1em;
+}
+
+#skills .card p {
+  font-size: 1em;
+}
+.about{
+  
+  padding: 60px 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(76, 75, 75);
+}
+/* CSS */
+.projects {
+  padding: 50px 0;
+}
+
+.projects .section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 2.5em;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.projects .project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects .project-card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .project-card:hover {
+  color: #f00; 
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); 
+}
+
+.projects .project-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects .project-card h3 {
+  font-size: 1.5em;
+}
+
+.projects .project-card button {
+  display: inline-block;
+  background-color: var(--colordark);
+  color: var(--colorlight);
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.projects .project-card button:active {
+  background-color: #111; 
+  content: "Visited";
+}
+.head{
+  margin: 30px;
+}
+.head h1{
+  color: rgb(208, 116, 236);
+}
+.head p{
+  color: rgb(188, 138, 138);
+}
+.info{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  width: 400px;
+  height: 250px;
+  
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px;
+  
+}
+.card a:hover {
+  color: rgb(23, 86, 79);
+}
+.info a{
+  text-decoration: none;
+  color: rgb(241, 239, 239);
+  font-size: larger;  
+  text-transform: uppercase;
+  
+}
+.card a:hover {
+  color: rgb(19, 23, 67);
+}
+.points{
+  margin: 20px;
+}
+.p{
+  margin: 10px;
+}
+
+.achievements{
+  display: none;
+}
+.qualifications{
+  display: none;
+}
+.contact{
+  background-color: grey;
+}
+/* CSS */
+.contact {
+  padding: 50px 0;
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.contact h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #333; 
+  color: #fff; 
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+.me{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px;
+}
+.c{
+  width: 400px;
+  height: 250px;
+  
+  padding: 10px;
+  border-radius: 8px;
+  
+  margin: 30px;
+  
+}
+.h{
+  padding: 100px 100px;
+}
+.input{
+  display: block;
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    background-color: rgb(2, 104, 2);
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+  }
+  nav ul li a {
+    color: rgb(110, 229, 110);
+  }
+  
+  .banner {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 850px) {
+  html {
+    font-size: 17px;
+  }
+  
+}
+@media only screen and (min-width: 850px) and (max-width: 1250px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  html {
+    font-size: 20px;
+  }
+  
+}
+@media screen and (max-width: 1024px) {
+  #skills .skill-cards {
+    grid-template-columns: repeat(2, 1fr); /* This will create a 2 column grid for tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #skills .skill-cards {
+    grid-template-columns: 1fr; /* This will create a 1 column grid for mobile devices */
+  }
+}
